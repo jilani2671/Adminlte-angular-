@@ -11,6 +11,12 @@ import { DashboardChartComponent } from './components/dashboard-chart/dashboard-
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './auth/components/login/login.component';
+import { BaseComponent } from './components/dashboard/base/base.component';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -22,12 +28,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     DashboardChartComponent,
     HomeComponent,
+    LoginComponent,
+    BaseComponent,
+ 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+      CommonModule,
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

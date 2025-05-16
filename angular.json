@@ -69,6 +69,7 @@
               "public/dist/js/adminlte.js",
               "public/dist/js/demo.js",
               "public/dist/js/pages/dashboard.js"
+      
             ]
           },
           "configurations": {
